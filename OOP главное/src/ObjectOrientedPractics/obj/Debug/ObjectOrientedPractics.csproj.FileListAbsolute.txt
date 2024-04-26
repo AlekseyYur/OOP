@@ -1,0 +1,42 @@
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe.config
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.pdb
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.AssemblyReference.cache
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.Properties.Resources.resources
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Controls.AddressControl.resources
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.MainForm.resources
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CustomersTab.resources
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.ItemsTab.resources
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.GenerateResource.cache
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.CoreCompileInputs.cache
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.exe
+C:\Users\a1eks\Desktop\Programming-Tasks-2_composition\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.pdb
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe.config
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.pdb
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.AssemblyReference.cache
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.Properties.Resources.resources
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Controls.AddressControl.resources
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.MainForm.resources
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CustomersTab.resources
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.ItemsTab.resources
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.GenerateResource.cache
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.CoreCompileInputs.cache
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.exe
+C:\Users\a1eks\Desktop\OOP\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.pdb
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.AssemblyReference.cache
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.Properties.Resources.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Controls.AddressControl.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.MainForm.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CustomersTab.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.ItemsTab.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.GenerateResource.cache
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.csproj.CoreCompileInputs.cache
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.exe
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.pdb
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe.config
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.exe
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\bin\Debug\ObjectOrientedPractics.pdb
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CartsTab.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.OrdersTab.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.PriorityOrderTab.resources
