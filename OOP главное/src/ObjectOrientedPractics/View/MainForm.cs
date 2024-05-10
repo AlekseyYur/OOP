@@ -30,6 +30,10 @@ namespace ObjectOrientedPractics
 
         private void MainTabControl_TabIndexChanged(object sender, System.EventArgs e)
         {
+            if (tabControl1.SelectedIndex == 1)
+            {
+                customersTab1.UpdateDiscountsListBox();
+            }
             cartsTab1.Items = itemsTab1.Items;
             cartsTab1.Customers = customersTab1.Customer;
             ordersTab1.Customers = customersTab1.Customer;
@@ -38,6 +42,7 @@ namespace ObjectOrientedPractics
             {
                 ordersTab1.RefreshData();
             }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -1,4 +1,5 @@
 ﻿using ObjectOrientedPractics.Model;
+using ObjectOrientedPractics.Model.Orders;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -77,6 +78,8 @@ namespace ObjectOrientedPractics.View.Tabs
         /// </summary>
         private Customer CurrentCustomer { get; set; }
 
+        public double DiscountAmount { get; set; }
+
         /// <summary>
         /// Обновляет данные.
         /// </summary>
@@ -136,6 +139,8 @@ namespace ObjectOrientedPractics.View.Tabs
             CartListBox.SelectedIndex = selectedIndex;
 
             CreateOrderButton.Enabled = false;
+
+            UpdateAmountLabels();
         }
 
         private void CustomerComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -158,6 +163,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 else
                 {
                     AmountLabel.Text = CurrentCustomer.Cart.Amount.ToString();
+                    UpdateDiscountsCheckedListBox();
                     UpdateCartListBox(-1);
                 }
             }
@@ -239,10 +245,90 @@ namespace ObjectOrientedPractics.View.Tabs
             {
 
             order = new Order(OrderStatus.New, CurrentCustomer.Address, items);
+            UpdateCustomerDiscounts(items);
+            UpdateDiscountsCheckedListBox();
             CurrentCustomer.Orders.Add(order);
             CurrentCustomer.Cart.Items.Clear();
             }
         }
-    
+
+        /// <summary>
+        /// Обновляет данные списка скидок <see cref="DiscountsCheckedListBox"/>. 
+        /// </summary>
+        private void UpdateDiscountsCheckedListBox()
+        {
+            if (Customers.Count == 0)
+            {
+                DiscountsCheckedListBox.Items.Clear();
+                //DiscountsCheckedListBox.Enabled = false;
+                return;
+            }
+
+            DiscountsCheckedListBox.Items.Clear();
+
+            foreach (var discount in CurrentCustomer.Discounts)
+            {
+                DiscountsCheckedListBox.Items.Add(discount.Info);
+            }
+
+            for (int i = 0; i < DiscountsCheckedListBox.Items.Count; i++)
+            {
+                DiscountsCheckedListBox.SetItemChecked(i, true);
+            }
+
+            AmountLabel.Text = CurrentCustomer.Cart.Amount.ToString();
+            //DiscountsCheckedListBox.Enabled = true;
+            DiscountAmountLabel.Text = "0";
+            TotalLabel.Text = AmountLabel.Text;
+        }
+
+        /// <summary>
+        /// Обновляет текстовые данные.
+        /// </summary>
+        private void UpdateAmountLabels()
+        {
+            DiscountAmount = 0.0;
+
+            foreach (var item in DiscountsCheckedListBox.CheckedItems)
+            {
+                var index = DiscountsCheckedListBox.Items.IndexOf(item);
+                DiscountAmount += CurrentCustomer.Discounts[index].Calculate(
+                    CurrentCustomer.Cart.Items);
+            }
+
+            var amount = CurrentCustomer.Cart.Amount;
+            AmountLabel.Text = amount.ToString();
+            DiscountAmountLabel.Text = DiscountAmount.ToString();
+            TotalLabel.Text = (amount - DiscountAmount).ToString();
+        }
+
+        /// <summary>
+        /// Обновляет скидки покупателя по заданому списку товаров.
+        /// </summary>
+        /// <param name="items">Список товаров.</param>
+        private void UpdateCustomerDiscounts(List<Item> items)
+        {
+            foreach (var discount in CurrentCustomer.Discounts)
+            {
+                if (DiscountsCheckedListBox.CheckedItems.Contains(discount.Info))
+                {
+                    discount.Apply(items);
+                }
+
+                discount.Update(items);
+            }
+        }
+
+        /// <summary>
+        /// Событие при изменении выбора или состояния элемента в 
+        /// <see cref="DiscountsCheckedListBox"/>.
+        /// </summary>
+        /// <param name="sender">Элемент управления, вызвавший событие.</param>
+        /// <param name="e">Данные о событии.</param>
+        private void DiscountsCheckedListBox_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+            UpdateAmountLabels();
+        }
+
     }
 }

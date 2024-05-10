@@ -54,8 +54,10 @@
             this.PriorityOptionsLabel = new System.Windows.Forms.Label();
             this.DeliveryTimeComboBox = new System.Windows.Forms.ComboBox();
             this.DeliveryTimeLabel = new System.Windows.Forms.Label();
-            this.OrderItemsLabel = new System.Windows.Forms.Label();
             this.addressControl1 = new ObjectOrientedPractics.View.Controls.AddressControl();
+            this.OrderItemsLabel = new System.Windows.Forms.Label();
+            this.TotalHeaderLabel = new System.Windows.Forms.Label();
+            this.TotalLabel = new System.Windows.Forms.Label();
             this.DataPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrdersDataGridView)).BeginInit();
             this.MainTableLayoutPanel.SuspendLayout();
@@ -67,9 +69,9 @@
             // 
             this.AmountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.AmountLabel.Location = new System.Drawing.Point(-99, 464);
+            this.AmountLabel.Location = new System.Drawing.Point(269, 464);
             this.AmountLabel.Name = "AmountLabel";
-            this.AmountLabel.Size = new System.Drawing.Size(573, 21);
+            this.AmountLabel.Size = new System.Drawing.Size(205, 21);
             this.AmountLabel.TabIndex = 14;
             this.AmountLabel.Text = "49 999,90";
             this.AmountLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -232,7 +234,7 @@
             this.Status.ReadOnly = true;
             this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Status.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Status.Width = 72;
+            this.Status.Width = 65;
             // 
             // FullName
             // 
@@ -280,11 +282,13 @@
             // 
             this.SelectedOrderPanel.Controls.Add(this.PriorityPanel);
             this.SelectedOrderPanel.Controls.Add(this.addressControl1);
+            this.SelectedOrderPanel.Controls.Add(this.TotalLabel);
             this.SelectedOrderPanel.Controls.Add(this.AmountLabel);
             this.SelectedOrderPanel.Controls.Add(this.OrderItemsListBox);
             this.SelectedOrderPanel.Controls.Add(this.StatusComboBox);
             this.SelectedOrderPanel.Controls.Add(this.CreatedTextBox);
             this.SelectedOrderPanel.Controls.Add(this.IdTextBox);
+            this.SelectedOrderPanel.Controls.Add(this.TotalHeaderLabel);
             this.SelectedOrderPanel.Controls.Add(this.AmountHeaderLabel);
             this.SelectedOrderPanel.Controls.Add(this.StatusLabel);
             this.SelectedOrderPanel.Controls.Add(this.CreatedLabel);
@@ -339,16 +343,6 @@
             this.DeliveryTimeLabel.TabIndex = 20;
             this.DeliveryTimeLabel.Text = "Delivery Time:";
             // 
-            // OrderItemsLabel
-            // 
-            this.OrderItemsLabel.AutoSize = true;
-            this.OrderItemsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.OrderItemsLabel.Location = new System.Drawing.Point(0, 270);
-            this.OrderItemsLabel.Name = "OrderItemsLabel";
-            this.OrderItemsLabel.Size = new System.Drawing.Size(72, 13);
-            this.OrderItemsLabel.TabIndex = 3;
-            this.OrderItemsLabel.Text = "Order Items";
-            // 
             // addressControl1
             // 
             address1.Apartment = "-";
@@ -363,6 +357,38 @@
             this.addressControl1.Name = "addressControl1";
             this.addressControl1.Size = new System.Drawing.Size(471, 152);
             this.addressControl1.TabIndex = 15;
+            // 
+            // OrderItemsLabel
+            // 
+            this.OrderItemsLabel.AutoSize = true;
+            this.OrderItemsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.OrderItemsLabel.Location = new System.Drawing.Point(0, 270);
+            this.OrderItemsLabel.Name = "OrderItemsLabel";
+            this.OrderItemsLabel.Size = new System.Drawing.Size(72, 13);
+            this.OrderItemsLabel.TabIndex = 3;
+            this.OrderItemsLabel.Text = "Order Items";
+            // 
+            // TotalHeaderLabel
+            // 
+            this.TotalHeaderLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TotalHeaderLabel.AutoSize = true;
+            this.TotalHeaderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.TotalHeaderLabel.Location = new System.Drawing.Point(421, 499);
+            this.TotalHeaderLabel.Name = "TotalHeaderLabel";
+            this.TotalHeaderLabel.Size = new System.Drawing.Size(51, 13);
+            this.TotalHeaderLabel.TabIndex = 8;
+            this.TotalHeaderLabel.Text = "TOTAL:";
+            // 
+            // TotalLabel
+            // 
+            this.TotalLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.TotalLabel.Location = new System.Drawing.Point(265, 512);
+            this.TotalLabel.Name = "TotalLabel";
+            this.TotalLabel.Size = new System.Drawing.Size(205, 21);
+            this.TotalLabel.TabIndex = 14;
+            this.TotalLabel.Text = "49 999,90";
+            this.TotalLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // OrdersTab
             // 
@@ -412,5 +438,7 @@
         private System.Windows.Forms.Label PriorityOptionsLabel;
         private System.Windows.Forms.ComboBox DeliveryTimeComboBox;
         private System.Windows.Forms.Label DeliveryTimeLabel;
+        private System.Windows.Forms.Label TotalLabel;
+        private System.Windows.Forms.Label TotalHeaderLabel;
     }
 }

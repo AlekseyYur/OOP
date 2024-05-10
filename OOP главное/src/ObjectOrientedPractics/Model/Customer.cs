@@ -1,5 +1,5 @@
-﻿
-
+﻿using ObjectOrientedPractics.Model.Discounts;
+using ObjectOrientedPractics.Model.Orders;
 using ObjectOrientedPractics.Services;
 using ObjectOrientedPractics.Servises;
 using System;
@@ -30,7 +30,9 @@ namespace ObjectOrientedPractics.Model
         private List<Order> _orders;
         //приоритет
         private bool _isPriority;
-        
+        //cписок скидок
+        private List<IDiscount> _discounts;
+
 
         //заказы
         public List<Order> Orders
@@ -67,6 +69,15 @@ namespace ObjectOrientedPractics.Model
         //приоритетность
         public bool IsPriority { get; set; } = false;
 
+        /// <summary>
+        /// cписок скидок
+        /// </summary>
+        public List<IDiscount> Discounts
+        {
+            set { _discounts = value; }
+            get { return _discounts; }
+        }
+
 
         /// <summary>
         /// конструктор поумолчанию
@@ -92,6 +103,10 @@ namespace ObjectOrientedPractics.Model
             Cart = new Cart();
             Orders = new List<Order>();
             IsPriority = isPriority;
+            Discounts = new List<IDiscount>
+            {
+                new PointsDiscounts()
+            };
         }
         //отображение в customerlistbox
         public override string ToString()

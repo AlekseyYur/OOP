@@ -40,3 +40,4 @@ C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\bin\Debug\O
 C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.CartsTab.resources
 C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.OrdersTab.resources
 C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Tabs.PriorityOrderTab.resources
+C:\Users\a1eks\Desktop\OOP главное\src\ObjectOrientedPractics\obj\Debug\ObjectOrientedPractics.View.Forms.AddDiscount.resources

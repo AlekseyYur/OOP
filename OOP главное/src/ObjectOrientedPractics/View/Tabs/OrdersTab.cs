@@ -1,4 +1,5 @@
-﻿using ObjectOrientedPractics.Model;
+﻿using ObjectOrientedPractics.Model.Orders;
+using ObjectOrientedPractics.Model;
 using ObjectOrientedPractics.View.Controls;
 using System;
 using System.Collections.Generic;
@@ -111,7 +112,7 @@ namespace ObjectOrientedPractics.View.Tabs
                     Orders.Add(order);
                     var index = OrdersDataGridView.Rows.Add(
                         "", order.Id, order.Date, order.Status, customer.FullName,
-                        address, order.Amount);
+                        address, order.Amount, order.Total);
 
                     if (order is PriorityOrder)
                     {
@@ -147,9 +148,10 @@ namespace ObjectOrientedPractics.View.Tabs
                 CreatedTextBox.Text = string.Empty;
                 StatusComboBox.SelectedIndex = -1;
                 StatusComboBox.Enabled = false;
-                addressControl1.Address = null;
+                //addressControl1.Address = null;
                 OrderItemsListBox.DataSource = new List<string>();
                 AmountLabel.Text = string.Empty;
+                TotalLabel.Text = string.Empty;
                 IsPriorityOrder = false;
             }
             else
@@ -161,6 +163,7 @@ namespace ObjectOrientedPractics.View.Tabs
                 addressControl1.Address = Orders[SelectedIndex].Address;
                 OrderItemsListBox.DataSource = GetItemNames(Orders[SelectedIndex].Items);
                 AmountLabel.Text = Orders[SelectedIndex].Amount.ToString();
+                TotalLabel.Text = Orders[SelectedIndex].Total.ToString();
                 IsPriorityOrder = Orders[SelectedIndex] is PriorityOrder;
             }
         }
